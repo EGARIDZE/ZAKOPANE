@@ -1,0 +1,103 @@
+.tour__container {
+  padding: 60px 0px;
+}
+
+.tour__row {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.tour__block {
+  width: 33%;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #033479;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  margin: 0px 10px;
+}
+
+.tour__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.tour__block:hover {
+  transition-duration: 400ms;
+  transform: scale(1.03);
+}
+
+.tour__block h5 {
+  font-size: 25px;
+  padding: 20px 20px;
+  line-height: 25px;
+}
+
+.tour__block div {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0px 0px 20px 0px;
+  flex: 1 1 auto;
+}
+
+.tour__block img:hover {
+  display: block;
+  transition-duration: 500ms;
+  transform: scale(1.05);
+}
+
+.tour__block button {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 7px;
+  font-size: 17px;
+  margin-bottom: 40px;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #e60000;
+}
+
+.tour__block button a {
+  color: #fff;
+}
+
+.tour__block button:hover {
+  transition-duration: 300ms;
+  transform: scale(1.05);
+  background-color: #770909;
+}
+
+/* @media  */
+
+@media (max-width: 1200px) {
+  .tour__row {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tour__row {
+    width: 740px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour__row {
+    width: 100%;
+    display: block;
+  }
+
+  .tour__block {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

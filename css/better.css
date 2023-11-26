@@ -1,0 +1,176 @@
+/* better__container */
+
+.better__container {
+  background: #f7f7f7;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.better__row {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.better__block {
+  width: 50%;
+  padding: 0px 10px;
+}
+
+.better__block h2,
+.bonus__block h2 {
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
+}
+
+.better__block h2 {
+  padding: 0px;
+  text-align: left;
+}
+
+.bonus__block h2 {
+  font-size: 45px !important;
+}
+
+.better__block span {
+  color: #033479;
+  font-weight: bold;
+}
+
+.better__block li {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+}
+
+.better__block:nth-child(1) li::before,
+.better__block:nth-child(1) h2::before {
+  padding: 0 10px 0 0;
+  content: "\f00d";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: #033479;
+}
+
+.better__block:nth-child(2) li::before,
+.better__block:nth-child(2) h2::before,
+.choise__list li:before {
+  padding: 0 10px 0 0;
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: #033479;
+}
+
+.bonus__block {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.bonus__block ul div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bonus__block ul {
+  padding: 0px 20px;
+}
+
+.bonus__block ul li:before {
+  font-family: FontAwesome;
+  color: #033479;
+  padding-right: 5px;
+}
+
+.bonus__block ul div:nth-child(1) li:nth-child(1):before {
+  content: "\f015";
+}
+.bonus__block ul div:nth-child(1) li:nth-child(2):before {
+  content: "\f0f4";
+}
+.bonus__block ul div:nth-child(2) li:nth-child(1):before {
+  content: "\f207";
+}
+.bonus__block ul div:nth-child(2) li:nth-child(2):before {
+  content: "\f05a";
+}
+.bonus__block ul div:nth-child(3) li:nth-child(1):before {
+  content: "\f279";
+}
+.bonus__block ul div:nth-child(3) li:nth-child(2):before {
+  content: "\f007";
+}
+.bonus__block ul div li:before {
+  font-family: FontAwesome;
+  color: #033479;
+  margin-right: 5px;
+  font-weight: 400 !important;
+}
+
+.bonus__block li {
+  
+  font: 700 24px/30px Philosopher, Georgia, "Times New Roman", Times, serif;
+  padding: 0px 10px 10px 0px;
+}
+
+.bonus__block p {
+  font: 700 16px/24px Open Sans, Georgia, "Times New Roman", Times, serif;
+  color: #033479;
+  margin: 20px 0px 30px 0px;
+}
+
+/* better__container */
+
+.expenses__block li {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0px 0px 10px 0px !important;
+  line-height: 1.42857143;
+}
+
+.expenses__block li:before {
+  color: #000 !important;
+  content: "\f138" !important;
+}
+
+
+/* @media  */
+
+@media (max-width: 1200px) {
+
+  .better__row {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .better__row {
+    width: 740px;
+  }
+}
+
+@media (max-width: 768px) {
+  .better__row {
+    width: 100%;
+    display: block;
+    padding: 0px 10px;
+  }
+
+  .better__block {
+    width: 100%;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .expenses__block li {
+    margin: 0px 0px 10px 0px !important;
+    font-weight: 300 !important;
+  }
+}

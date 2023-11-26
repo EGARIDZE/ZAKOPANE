@@ -1,0 +1,34 @@
+/* choice__container */
+
+.choice__container {
+  padding: 60px 10% 40px 10%;
+  background-color: #f7f7f7;
+}
+
+.choice__container .main__title {
+  padding: 0px !important;
+}
+
+.choise__list li {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.choise__list p {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+/* choice__container */
+
+
+@media (max-width: 576px) {
+ 
+  .choice__container {
+    padding: 60px 20px 40px 20px;
+  }
+}

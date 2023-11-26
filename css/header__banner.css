@@ -1,0 +1,144 @@
+/* HEADER__BANNER */
+
+.header__banner {
+  background-image: url(../img/under-menu.jpg);
+  padding: 50px 0px 40px 0px;
+  text-align: center;
+}
+
+.banner__content {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.banner__block {
+  background-color: rgba(3, 52, 121, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.header__title {
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.banner__content ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.banner__content li {
+  padding: 0px 10px;
+}
+
+.banner__block h3 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+}
+.banner__date-block {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.banner__date-block p {
+  font-size: 20px;
+}
+
+.banner__price {
+  font-size: 30px !important;
+  font-weight: 700;
+  color: red;
+}
+
+.banner__draw {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url(../img/ng.jpg);
+  padding: 20px;
+}
+.banner__draw a {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 900;
+}
+
+/* HEADER__BANNER */
+
+@keyframes glowing {
+  /* 0% {
+    background-color: #2ba805;
+    background-blend-mode: overlay;
+  } */
+
+  0% {
+    background-color: #ad1f1f;
+    background-blend-mode: overlay;
+  }
+
+  25% {
+    background-color: #2ba805;
+    z-index: 3;
+    background-blend-mode: overlay;
+  }
+
+  50% {
+    background-color: #2ba805;
+    z-index: 3;
+    background-blend-mode: overlay;
+  }
+
+  75% {
+    background-color: #ad1f1f;
+    background-blend-mode: overlay;
+  }
+
+  100% {
+    background-color: #ad1f1f;
+    background-blend-mode: overlay;
+  }
+}
+
+.banner__draw {
+  animation: glowing 2s infinite reverse ease-in-out
+  /* animation: glowing 3s infinite; */
+}
+
+/* @media  */
+
+@media (max-width: 1200px) {
+  .banner__content {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner__content {
+    width: 740px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__content {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .header__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .banner__block h3 {
+    font-size: 25px;
+  }
+}

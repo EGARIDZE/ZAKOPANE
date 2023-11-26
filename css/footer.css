@@ -1,0 +1,35 @@
+footer {
+  background-image: url(../img/footer.jpg);
+  text-align: center;
+  color: #fff;
+  padding: 60px 0px 40px 0px;
+}
+
+.footer .main__title {
+  color: #fff !important;
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif !important;
+  margin-bottom: 20px !important;
+}
+
+.footer h2 {
+  letter-spacing: 1px;
+}
+
+.footer li {
+  font-weight: 700;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin: 10px 0px;
+  padding: 0px 20px;
+}
+
+.footer a {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #e60000;
+}
+
+.footer a:hover {
+  transition-duration: 400ms;
+  color: #fff;
+}

@@ -1,0 +1,68 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.wrapper {
+  background-color: #fff;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "FontAwesome";
+  font-family: "Philosopher", Georgia, "Times New Roman", Times, serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.main__title {
+  font-size: 45px;
+  text-align: center;
+  color: #033479;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  padding: 0px 20px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  color: #033479;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+  .main__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .form__block p:nth-child(1) {
+    font-size: 30px !important;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .main__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}

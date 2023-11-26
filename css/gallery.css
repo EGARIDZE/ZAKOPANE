@@ -1,0 +1,40 @@
+/* gallery__container */
+
+.gallery__container {
+  margin: 20px 20px 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.gallery__block {
+  padding: 0.5%;
+  width: 16.6%;
+}
+
+.gallery__block img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* gallery__container */
+
+/* @media  */
+
+@media (max-width: 1200px) {
+  .gallery__block {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__block {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery__block {
+    width: 50%;
+    padding: 1%;
+  }
+}

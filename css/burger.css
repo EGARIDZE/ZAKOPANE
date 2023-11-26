@@ -1,0 +1,90 @@
+.menu-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+  left: 90%;
+  padding: 9px 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  margin-right: 30px;
+}
+.menu-btn span {
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #888;
+  transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 7px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 7px);
+}
+
+/* Меню, которое будет появляться */
+.menu {
+  overflow-y: visible;
+  overflow: hidden;
+  height: 0px;
+  border-top: 1px solid #f2f2f2;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  transition: all 0.5s linear 0s !important;
+}
+.menu.active {
+  overflow: hidden;
+  height: 100%;
+  padding: 15px;
+  height: 374px;
+  transition: all 0.5s linear 0s !important;
+}
+.menu li {
+  list-style-type: none;
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.menu li {
+  line-height: 22px;
+  padding: 10px 0px;
+  color: #001648;
+}
+
+.menu li a {
+  font-weight: 700;
+  color: #001648;
+}
+
+.menu__number-li {
+  text-align: end;
+}
+
+.menu__number-li a {
+  color: #001648;
+}
+
+
+@media (max-width: 576px) {
+  .menu-btn {
+    left: 83%;
+  }
+}

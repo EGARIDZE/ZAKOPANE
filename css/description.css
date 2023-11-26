@@ -1,0 +1,117 @@
+.description__black,
+.description__white {
+  width: 50%;
+}
+
+.description__container {
+  padding: 60px 0px;
+}
+
+.tatry {
+  /* background-image: url(../img/tatry.jpg); */
+  background: url(../img/tatry.jpg) 50% no-repeat;
+}
+.zakopane {
+  background: url(../img/zakopane.jpg) 50% no-repeat;
+}
+.demyan {
+  background: url(../img/demyan.jpg) 50% no-repeat;
+}
+.oravski {
+  background: url(../img/oravski.jpg) 50% no-repeat;
+}
+.oko {
+  background: url(../img/oko.jpg) 50% no-repeat;
+}
+.terma {
+  background: url(../img/terma.jpg) 50% no-repeat;
+}
+.nalivki {
+  background: url(../img/nalivki.jpg) 50% no-repeat;
+}
+.bukovina {
+  background: url(../img/bukovina.jpg) 50% no-repeat;
+}
+
+.description__row-block {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.description__row-block {
+  min-height: 500px;
+  background-size: 100%;
+}
+
+.description__black {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description__white {
+  padding: 20px;
+}
+
+.description__black p {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+  padding-bottom: 20px;
+  color: #fff;
+  line-height: 20px;
+}
+.description__white p {
+  font: 700 30px/30px Philosopher, Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  color: #000;
+}
+
+/* @media  */
+
+@media (max-width: 1200px) {
+  .description__row-block {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .description__black {
+    width: 60%;
+  }
+
+  .description__white {
+    width: 40%;
+  }
+
+  .description__row-block {
+    width: 740px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description__container {
+    padding: 60px 10px;
+  }
+
+  .description__black {
+    width: 100%;
+    order: 2;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .description__white {
+    width: 100%;
+    order: 1;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .description__row-block {
+    width: 100%;
+    flex-wrap: wrap;
+    height: 80%;
+    background-size: cover;
+  }
+}
